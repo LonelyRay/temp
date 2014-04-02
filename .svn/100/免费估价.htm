@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>新增寄售</title>
+        <title>免费估价</title>
         <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
         name="viewport" />
         <meta content="yes" name="apple-mobile-web-app-capable" />
@@ -19,11 +19,11 @@
             <a class="addr" href="选择城市.htm">杭州<s class="arr-down"></s></a>
         </header>
         <div id="content">
-            <div class="region">
-                <form method="post" class="js-addform">
+            <form method="post" class="js-addform">
+                <div class="region bb-org">     
                     <fieldset>
                         <legend>新增寄售</legend>
-                        <ul>
+                        <ul class="mrb40">
                             <li>
                                 <label class="labhd">品牌 : </label>
                                 <div class="bd ui-select">
@@ -72,83 +72,59 @@
                                     </select>
                                 </div>
                             </li>
+
                             <li>
-                                <label class="labhd" for="input-c1">标价 : </label>
-                                <div class="bd ui-input">
-                                    <input type="number" name="input-c1" id="input-c1" placeholder="请输入您期望的售价" class="ui-input-text">
+                                <label class="labhd">里程 : </label>
+                                <div class="bd ui-select">
+                                    <span class="ui-btn-inner">
+                                        <span class="ui-btn-text"></span>
+                                        <span class="arr-down"></span>
+                                    </span>
+                                    <select name="select-c3">
+                                        <option value="">请选择行驶里程(可选)</option>
+                                        <option value="1">S12124</option>
+                                        <option value="2">12341234</option>
+                                        <option value="3">12341234</option>
+                                        <option value="4">12341234</option>
+                                    </select>
                                 </div>
-                            </li> 
+                            </li>
                             <li>
-                                <label class="labhd" for="input-c2">电话 : </label>
-                                <div class="bd ui-input">
-                                    <input type="tel" name="input-c2" id="input-c1" placeholder="请输入您期望的电话" class="ui-input-text">
+                                <label class="labhd">车龄 : </label>
+                                <div class="bd ui-select">
+                                    <span class="ui-btn-inner">
+                                        <span class="ui-btn-text"></span>
+                                        <span class="arr-down"></span>
+                                    </span>
+                                    <select name="select-c3">
+                                        <option value="">请选择车龄(可选)</option>
+                                        <option value="1">S12124</option>
+                                        <option value="2">12341234</option>
+                                        <option value="3">12341234</option>
+                                        <option value="4">12341234</option>
+                                    </select>
                                 </div>
-                            </li>  
+                            </li>
                             <li>
-                                <label class="labhd">图片 : </label>
-                                <ul class="uppic bd">
-                                    <li class="ui-file i1 added">
-                                        <img src="200_114.png">
-                                        <b>正面</b>
-                                        <s></s>
-                                        <input type="file" name="pic">
-                                    </li>
-                                    <li class="ui-file i2">
-                                        <b>侧面</b>
-                                        <s></s>
-                                        <input type="file" name="pic">
-                                    </li>
-                                    <li class="ui-file i3">
-                                        <b>45&deg;</b>
-                                        <s></s>
-                                        <input type="file" name="pic">
-                                    </li>
-                                    <li class="ui-file i4">
-                                        <b>背面</b>
-                                        <s></s>
-                                        <input type="file" name="pic">
-                                    </li>
-                                    <li class="ui-file i5">
-                                        <b>轮毂</b>
-                                        <s></s>
-                                        <input type="file" name="pic">
-                                    </li>
-                                    <li class="ui-file i6">
-                                        <b>保险杠</b>
-                                        <s></s>
-                                        <input type="file" name="pic">
-                                    </li>
-                                    <li class="ui-file i7">
-                                        <b>发动机</b>
-                                        <s></s>
-                                        <input type="file" name="pic">
-                                    </li>
-                                    <li class="ui-file i8">
-                                        <b>中控</b>
-                                        <s></s>
-                                        <input type="file" name="pic">
-                                    </li>
-                                    <li class="ui-file i9">
-                                        <b>内饰</b>
-                                        <s></s>
-                                        <input type="file" name="pic">
-                                    </li>
+                                <label class="labhd">车况 : </label>
+                                <ul class="bd ui-radio ckradio">
+                                    <li><label class="org"><span class="ui-radio-inner"><s></s><input class="ui-radio-inp" value="1" type="radio" name="ck"></span>优秀</label> 无事故且有保养记录</li>
+                                    <li><label class="org"><span class="ui-radio-inner"><s></s><input class="ui-radio-inp" checked value="2" type="radio" name="ck"></span>较好</label> 无大事故且有保养记录 </li>
+                                    <li><label class="org"><span class="ui-radio-inner"><s></s><input class="ui-radio-inp" value="3" type="radio" name="ck"></span>一般</label> 需维修或保养记录不全</li>
                                 </ul>
-                            </li> 
+                            </li>
                         </ul>
-                        <footer><button type="submit" class="btn">提交寄售</button></footer>
                     </fieldset>
-                </form>
-            </div>
+                </div>
+                <footer><button type="submit" class="btn">记住我想买的车</button></footer>
+            </form>
         </div>
         <script src="static/lib/sea.js?v=20140329"></script>
         <script>
             seajs.use("./static/index.js?v=20140329");
-            seajs.use(['./static/p/jishou_add','./static/control/selector.js'], function(a,b) {
-                a.init({
-                    uppicEl:$(".uppic")
-                });
+            seajs.use(['./static/control/selector.js'], function(a) {
                 $(".ui-select").uiseletor();
+                $(".ui-radio").uiradio();
             });
         </script>
     </body>

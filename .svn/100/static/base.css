@@ -1,8 +1,8 @@
-body,h1,h2,ol,ul,li,p,input,header,nav,section,footer,fieldset{margin:0;padding:0}
+body,h1,h2,ol,ul,li,dl,dt,dd,p,input,header,nav,section,footer,fieldset{margin:0;padding:0}
 ul,ol{list-style:none}
 table{border-collapse:collapse;border-spacing:0}
-footer{text-align:center;margin:25px 0}
-em{font-style:normal;}
+footer{text-align:center;margin:28px 0}
+em{font-style:normal;color:#ff0000;}
 fieldset{border:none;}
 legend{display:none;}
 input[type="text"],input[type="search"]{-webkit-appearance:none;-webkit-tap-highlight-color:#fff;outline:0}
@@ -40,16 +40,29 @@ nav .r{position:absolute;right:0}
 .price{color:#fe0002;font-size:16px;}
 .price span{font-size:12px}
 
+.org{color:#ea5505;}
+.bt-org{border-top:1px solid #ea5505;}
+.bb-org{border-bottom:1px solid #ea5505;}
+.mrb40{margin-bottom:40px}
+/* form */
+    .labhd{display:inline-block;width:12.04%;vertical-align:top;padding:25px 0 0;}
+    .ui-select select {top:20px; width:100%;height:2em;}
+    .ui-radio-inp,
+    .ui-select select {
+        position:absolute;-webkit-appearance: none;filter: Alpha(Opacity=0); opacity:0; z-index: 2; left:0;
+    }
+    .ui-select,
+    .ui-radio-inner{position:relative;margin-right:6px;}
+    .ui-radio-inner s{width:12px;height: 12px;border:1px solid #ea5505;display:inline-block;border-radius:3px;background-color:#fff}
+    .ui-radio-checked s{background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARBAMAAADJQ1rJAAAAG1BMVEX////rXRHrXhLrXBD5y7P5zLTvgEXqVQX0p34HGqyQAAAAAXRSTlMAQObYZgAAAEZJREFUeF6ljiEOgEAQxCqRKLA4fgA/QK8Ci8Pies8ngc3lPFVV04F9VIeAzpcChx/BlXYyp02Y3H+s7vVNo3abL2yrugQP8NA/LSnO8ZsAAAAASUVORK5CYII=);background-size:8px 8px;background-repeat:no-repeat;background-position:center center}
 /* */
     .btnload{background-color:#a4a4a4;border:5px;height:40px;width:181px;line-height:40px;color:#fff;font-size:18px;text-align:center;display:inline-block;}
     .btnload s{margin-left:5px;width:17px;height:9px;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAASCAAAAAAbVlOzAAAAAnRSTlMApKcoqskAAACZSURBVHgBxZChDsQgEET3/78DDBaJxeHqajAoXBUJaq6T3l1ZQpNzt47JY2ZnxeXkzPPE4iUBNTwBPgNFQgWQ/QpwWweOKMbGA2jbnHbp/dTlpq0iQvm4y5XJdwnDEnsHajQcGV33d5pLzGbTAaHcKNsTD5X4t4GM5uABfJ5CRa3I721eXXTRpA+wQJjGomtEz/8Ra39wWTEvALSoJr69X30AAAAASUVORK5CYII=);}
 /* ui */
-    .ui-select {position: relative;padding:5px 0}
+    .ui-select {padding:5px 0}
     /* Fixes #2588: When Windows Phone 7.5 (Mango) tries to calculate a numeric opacity for a select (including "inherit") without explicitly specifying an opacity on the parent to give it context, a bug appears where clicking elsewhere on the page after opening the select will open the select again. */
-    .ui-select select { position:absolute;-webkit-appearance: none; left: 0; top:20px; width:100%;height:2em;filter: Alpha(Opacity=0); opacity: 0; z-index: 2; }
+    
     .ui-select-disabled{ opacity: .3; }
-    /* Display none because of issues with IE/WP's filter alpha opacity */
-    .ui-select-disabled select { display: none; }
     @-moz-document url-prefix() { .ui-select select {opacity: 0.0001; }}
     /*listbox*/
     .ui-select .ui-btn-text{ display: block; min-height: 1em; overflow: hidden !important;
@@ -88,7 +101,7 @@ nav .r{position:absolute;right:0}
     .clist .pic a{display:block;border:1px solid #bdbdbd;background-color:#fff;padding:2px;width:100px;height:57px;text-align:center;border-radius:2px;position:relative;}
     .js-list .i1 img,
     .clist .pic img{max-width:100px;max-height:57px;vertical-align:middle;}
-    .js-list .i1 em{position:absolute;bottom:2px;right:2px;background-color:rgba(235,85,5,0.5);color:#fff;font-size:12px;padding:0 5px;}
+    .js-list .i1 span{position:absolute;bottom:2px;right:2px;background-color:rgba(235,85,5,0.5);color:#fff;font-size:12px;padding:0 5px;}
     .i-add2{width:22px;height:22px;margin-top:8px;
         background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAArCAMAAADbnfG1AAAAMFBMVEXudjP4xKb86d3qWAj4yKz728j1q37yklr//fzzmWP+8+350bn97OPsXwT////qVgVOUDKeAAAAEHRSTlP///////////////////8A4CNdGQAAAHJJREFUeNrt1bsOgDAIQFFqbYt9wP//rdLFEGvDZmJ6RzgTC8DPWo8HDXXMGMCqD7qqVu1IWnrpH+jWktt1teuihy51HckUYhSdyVgWjVaNooNVB9Gw2fAG4wsWkhLo/PTeslbNNS+99Bf6/oDeqPn1u55vRGnNb35GKgAAAABJRU5ErkJggg==);
     }
@@ -100,12 +113,10 @@ nav .r{position:absolute;right:0}
     nav.editing .del{display:inline;}
 
 /* add寄售 */
-    .js-addform{}
-    .js-addform label{display:inline-block;width:12.04%;vertical-align:top;padding:25px 0 0;}
     .js-addform .bd{width:81.9%;display:inline-block;border-top:1px solid #fff;border-bottom:1px solid #e4e4e4;padding:25px 0 5px;overflow:hidden;}
     .js-addform .arr-down{position:absolute;right:0;border-top-color:#ea5505;top:32px;}
     .uppic .ui-file{overflow:hidden;display:inline-block;margin:0 10px 10px 0;background-image:url(img/jsupload_bg.jpg);background-repeat:no-repeat;background-size:209px 209px;background-origin：content}
-    .uppic .ui-file em{position:absolute;top:4px;left:4px;color:#bababa;font-size:12px}
+    .uppic .ui-file b{position:absolute;top:4px;left:4px;color:#bababa;font-size:12px;font-weight: normal;}
     .uppic .ui-file s{position:absolute;bottom:4px; right:4px;background-repeat:no-repeat;background:#ff0000 url(img/js_adi.png) no-repeat -12px 2px;width:12px;height:12px;border-radius:6px;}
     .uppic .added s{background-position:2px 2px;z-index:3;}
     .uppic .added input{top:-1000em;left:-1000em;}
@@ -143,5 +154,13 @@ nav .r{position:absolute;right:0}
     .ifbot{position:relative;}
     .ifbot .r{position:absolute;right:0;top:5px;}
 
+/* 提交成功 */
+    .result {line-height:32px;padding-top:10px}
+    .result .msg{display:block;border-bottom:1px solid #e4e4e4;/*border-bottom-colors:#e4e4e4 #ffffff;*/padding:10px 0;}
+    .result dl.region{border-top:1px solid #ea5505;border-bottom:1px solid #ea5505;padding-top:15px;padding-bottom:18px;}
+    .result dt{padding:2px 0}
+    .msgdesc{border-top:1px solid #ffffff;padding:20px 0}
 
-
+/* 估价 */
+    .ckradio li{line-height:32px;}
+    .ckradio li label{margin-right: 8px}
