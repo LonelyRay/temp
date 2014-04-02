@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+        <meta charset="utf-8" />
+        <title>我要寄售</title>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+        name="viewport" />
+        <meta content="yes" name="apple-mobile-web-app-capable" />
+        <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+        <meta content="telephone=no" name="format-detection" />
+        <link href="http://localhost/demo/baiyouka/static/touch-icon.png" rel="apple-touch-icon-precomposed"
+        />
+        <link href="static/base.css?t=20130329.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header>
+            <a href='#' class="lg">bucar</a>
+            <span class="slg">让二手车交易更公平</span>
+            <a class="addr" href="选择城市.htm">杭州<s class="arr-down"></s></a>
+        </header>
+        <div id="content">
+            <nav class="npic">
+                <a class="btn" href="新增寄售.htm"><s class="i-add2"></s></a>
+                新增加寄售车辆
+                <span class='r' id="J_NavBtn"><a href="#del" class="del">删除</a> <a href="#edit" class="edit">编辑</a></span>
+            </nav>
+            <div class="region">
+                <table class="js-list">
+                    <thead>
+                        <tr>
+                            <td class="i1">我寄售的车</td>
+                            <td class="i2">时间</td>
+                            <td class="i3">售价</td>
+                            <td class="i4">操作</td>  
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="i1">
+                                <input type="checkbox" name='ck' value="111">
+                                <a href="#">
+                                    <img src="200_114.png">
+                                </a>
+                                
+                            </td>
+                            <td class="i2">2014<br>4/5<br>21:40</span>
+                            <td class="i3 price">32.33<span>万<span></td>
+                            <td class="i4"><a href="#" class="b-mp">改价</a></td>
+                        </tr>
+                        <tr>
+                            <td class="i1">
+                                <input type="checkbox" name='ck' value="222">
+                                <a href="#">
+                                    <img src="200_114.png">
+                                    <em>待审</em>
+                                </a>
+                            </td>
+                            <td class="i2">2014<br>4/5<br>21:40</span>
+                            <td class="i3 price">32.33<span>万<span></td>
+                            <td class="i4"><a href="#" class="b-mp">改价</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="static/lib/sea.js?v=20140329"></script>
+        <script>
+            seajs.use("./static/index.js?v=20140329");
+            seajs.use('./static/p/jishou');
+        </script>
+    </body>
+</html>

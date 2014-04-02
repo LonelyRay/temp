@@ -1,0 +1,147 @@
+body,h1,h2,ol,ul,li,p,input,header,nav,section,footer,fieldset{margin:0;padding:0}
+ul,ol{list-style:none}
+table{border-collapse:collapse;border-spacing:0}
+footer{text-align:center;margin:25px 0}
+em{font-style:normal;}
+fieldset{border:none;}
+legend{display:none;}
+input[type="text"],input[type="search"]{-webkit-appearance:none;-webkit-tap-highlight-color:#fff;outline:0}
+body{color:#000;font-size:14px;background:#f7f7f7;font-family:"\5fae\8f6f\96c5\9ed1","Microsoft YaHei"}
+a,a:visited{color:#8d8d8d;text-decoration:none}
+.hidden{display:none}
+.tc{text-align:center;}
+.arr-down {display:inline-block;width:0px; height:0px; border-left:5px solid transparent;border-right:5px solid transparent;border-top:5px solid #ffffff;overflow:hidden;}
+
+header{background-color:#ea5505;height:18px;line-height:18px;color:#fff;padding:10px 3.125% 12px;position:relative;}
+header .addr{background-color:#ea7605;border-radius:3px;border:1px solid #ffffff;display:inline-block;position:absolute;right:3.125%;padding:0 8px 0 12px;color:#fff;}
+.lg{width:90px;height:18px;background:url(img/logo8.png) no-repeat 0 0;background-size:100% 100%;display:inline-block;margin-right:4px;text-indent:-20em;}
+.slg{display:inline-block;height:18px;border-left:2px solid #ffffff;padding-left:5px}
+.region{margin:0 3.125%;padding:0 4.6875%;}
+.region2{margin:0 3.125%;padding:0 0 0 4.6875%;}
+
+nav{border-bottom:1px solid #ea5505;padding:16px 4.6875% 11px;margin:0 3.125%;position:relative;}
+.npic{height:40px;line-height:40px;}
+.npic .btn{height:40px;width:40px;margin-right:3.75%;vertical-align:top;border-radius: 5px;padding:0;}
+.btn,.btn:visited{
+    display:inline-block;text-align:center;color:#fff;font-size:14px;
+    border-top: 1px solid #f3a175;
+    border-width:1px 0 0 0;
+    background: #ea5505;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f17203), to(#ea5505));
+    background: -webkit-linear-gradient(top, #f17203, #ea5505);
+    background: -moz-linear-gradient(top, #f17203, #ea5505);
+    background: -ms-linear-gradient(top, #f17203, #ea5505);
+    background: -o-linear-gradient(top, #f17203, #ea5505);
+    border-radius:3px;
+    padding:5px 30px;
+}
+nav .r{position:absolute;right:0}
+
+.price{color:#fe0002;font-size:16px;}
+.price span{font-size:12px}
+
+/* */
+    .btnload{background-color:#a4a4a4;border:5px;height:40px;width:181px;line-height:40px;color:#fff;font-size:18px;text-align:center;display:inline-block;}
+    .btnload s{margin-left:5px;width:17px;height:9px;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAASCAAAAAAbVlOzAAAAAnRSTlMApKcoqskAAACZSURBVHgBxZChDsQgEET3/78DDBaJxeHqajAoXBUJaq6T3l1ZQpNzt47JY2ZnxeXkzPPE4iUBNTwBPgNFQgWQ/QpwWweOKMbGA2jbnHbp/dTlpq0iQvm4y5XJdwnDEnsHajQcGV33d5pLzGbTAaHcKNsTD5X4t4GM5uABfJ5CRa3I721eXXTRpA+wQJjGomtEz/8Ra39wWTEvALSoJr69X30AAAAASUVORK5CYII=);}
+/* ui */
+    .ui-select {position: relative;padding:5px 0}
+    /* Fixes #2588: When Windows Phone 7.5 (Mango) tries to calculate a numeric opacity for a select (including "inherit") without explicitly specifying an opacity on the parent to give it context, a bug appears where clicking elsewhere on the page after opening the select will open the select again. */
+    .ui-select select { position:absolute;-webkit-appearance: none; left: 0; top:20px; width:100%;height:2em;filter: Alpha(Opacity=0); opacity: 0; z-index: 2; }
+    .ui-select-disabled{ opacity: .3; }
+    /* Display none because of issues with IE/WP's filter alpha opacity */
+    .ui-select-disabled select { display: none; }
+    @-moz-document url-prefix() { .ui-select select {opacity: 0.0001; }}
+    /*listbox*/
+    .ui-select .ui-btn-text{ display: block; min-height: 1em; overflow: hidden !important;
+    /* This !important is required for iPad Safari specifically. See https://github.com/jquery/jquery-mobile/issues/2647 */ }
+    .ui-select .ui-btn-text { text-overflow: ellipsis;color:#a1a1a1 }
+
+    .ui-input-text{-webkit-appearance: none;padding: .4em .4em .4em 0;line-height: 1.4;width: 100%;outline: 0;background:none;border:none;}
+
+    .ui-file{width:69px;height:69px;border:1px solid #aaaaaa;border-radius:5px;position:relative;overflow:hidden;}
+    .ui-file input{filter: Alpha(Opacity=0); opacity: 0; z-index: 2; position: absolute; cursor: pointer; left: 0; top:0; width: 100%;min-height: 100%; height:8em;}
+    @-moz-document url-prefix() { .ui-file select {opacity: 0.0001; }}
+    .ui-file img{max-height:100%;max-width:100%;}
+    .i-city,
+    .i-add2,
+    .btnload s{background-repeat:no-repeat;display:inline-block;background-size:100% 100%;}
+/* city */
+    .city{padding-top:4.06%}
+    .city li{float:left;margin:0 3.125% 3.125% 0;}
+    .city a{display:inline-block;width:70px;height:70px;background-color:#ea5505;color:#fff;text-align:center;line-height:70px;font-size:22px;-webkit-tap-highlight-color:#f09f05;border-radius:4px}
+    .i-city{background-image:url(img/i-city.png);width:25px;height:25px;margin-top:7px}
+/* jishou */
+    .js-list{width:100%;font-size:12px}
+    .js-list thead{color:#ea5505;}
+    .js-list td{
+        vertical-align:middle;
+    }
+    .js-list .i2,
+    .js-list .i3{text-align:center;}
+    .js-list td,
+    .clist li{border-top:1px solid #fff;border-bottom:1px solid #e4e4e4;padding:10px 0;}
+    .js-list .i2{width:18%}
+    .js-list .i3{width:25%;}
+    .js-list .i4{width:16%;text-align:right;}
+    .js-list .b-mp{color:#fff;background-color:#ea5505;border-radius:3px;display:inline-block;padding:0 8px;white-space:nowrap;margin-right:-10px;}
+    .js-list .i1 a,
+    .clist .pic a{display:block;border:1px solid #bdbdbd;background-color:#fff;padding:2px;width:100px;height:57px;text-align:center;border-radius:2px;position:relative;}
+    .js-list .i1 img,
+    .clist .pic img{max-width:100px;max-height:57px;vertical-align:middle;}
+    .js-list .i1 em{position:absolute;bottom:2px;right:2px;background-color:rgba(235,85,5,0.5);color:#fff;font-size:12px;padding:0 5px;}
+    .i-add2{width:22px;height:22px;margin-top:8px;
+        background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAArCAMAAADbnfG1AAAAMFBMVEXudjP4xKb86d3qWAj4yKz728j1q37yklr//fzzmWP+8+350bn97OPsXwT////qVgVOUDKeAAAAEHRSTlP///////////////////8A4CNdGQAAAHJJREFUeNrt1bsOgDAIQFFqbYt9wP//rdLFEGvDZmJ6RzgTC8DPWo8HDXXMGMCqD7qqVu1IWnrpH+jWktt1teuihy51HckUYhSdyVgWjVaNooNVB9Gw2fAG4wsWkhLo/PTeslbNNS+99Bf6/oDeqPn1u55vRGnNb35GKgAAAABJRU5ErkJggg==);
+    }
+    /* editing */
+    .js-list .i1 input{display:none;float:left;margin:24px 0 0 -14px;}
+    .js-list.editing .i1 input{display:inline;}
+    /* del */
+    nav .del{display:none}
+    nav.editing .del{display:inline;}
+
+/* add寄售 */
+    .js-addform{}
+    .js-addform label{display:inline-block;width:12.04%;vertical-align:top;padding:25px 0 0;}
+    .js-addform .bd{width:81.9%;display:inline-block;border-top:1px solid #fff;border-bottom:1px solid #e4e4e4;padding:25px 0 5px;overflow:hidden;}
+    .js-addform .arr-down{position:absolute;right:0;border-top-color:#ea5505;top:32px;}
+    .uppic .ui-file{overflow:hidden;display:inline-block;margin:0 10px 10px 0;background-image:url(img/jsupload_bg.jpg);background-repeat:no-repeat;background-size:209px 209px;background-origin：content}
+    .uppic .ui-file em{position:absolute;top:4px;left:4px;color:#bababa;font-size:12px}
+    .uppic .ui-file s{position:absolute;bottom:4px; right:4px;background-repeat:no-repeat;background:#ff0000 url(img/js_adi.png) no-repeat -12px 2px;width:12px;height:12px;border-radius:6px;}
+    .uppic .added s{background-position:2px 2px;z-index:3;}
+    .uppic .added input{top:-1000em;left:-1000em;}
+    .uppic .added{background:none}
+    .uppic .i2{background-position:-70px 0}
+    .uppic .i3{background-position:-140px 0}
+    .uppic .i4{background-position:0 -70px}
+    .uppic .i5{background-position:-70px -70px}
+    .uppic .i6{background-position:-140px -70px}
+    .uppic .i7{background-position:0 -140px}
+    .uppic .i8{background-position:-70px -140px}
+    .uppic .i9{background-position:-140px -140px}
+
+/* 服务 */
+    .ser{padding:10px 0;width:100%;overflow:hidden;border-bottom:1px solid #e4e4e4;}
+    .ser s,s.ser-7,s.ser-db,s.ser-zj,s.ser-rz{display:block;width:46px;height:46px;border-radius:23px;background-image:url(img/ser.png);background-repeat:no-repeat;background-size:228px 26px;margin:0 auto 2px;}
+    .ser-rz s,s.ser-rz{background-color:#2ec300;background-position:-6% 38.46%}
+    .ser-zj s,s.ser-zj{background-color:#ea5505;background-position:33% 38.46%}
+    .ser-db s,s.ser-db{background-color:#ffa800;background-position:71% 38.46%}
+    .ser-7 s,s.ser-7{background-color:#0591ea;background-position:109.3% 38.46%}
+    .ser li{float:left;width:25%;text-align:center;overflow:hidden;font-size:12px}
+    .ser li:last-child{margin-right:0}
+    s.ser-7,s.ser-db,s.ser-zj,s.ser-rz{width:13px;height:13px;border-radius:6px;background-size:64px 7px;display:inline-block;}
+
+/* 车列表 */
+    .clist li{width:100%;overflow:hidden;}
+    .clist .pic{float:left;margin-left:-100%}
+    .clist .if{float:left;width:100%;}
+    .clist .ifwrap{margin-left:117px;font-size:12px;}
+    .ifwrap b{color:#7a7a7a;font-size:12px;font-weight:normal;}
+    .ifwrap p{max-height:2.8em;overflow:hidden;margin-bottom:2px}
+    .ifwrap a{color:#000000}
+    .ifwrap .price{font-weight:bolder;}
+    .ifwrap .price span{font-weight:normal;}
+    .ifbot{position:relative;}
+    .ifbot .r{position:absolute;right:0;top:5px;}
+
+
+

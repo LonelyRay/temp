@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+        <meta charset="utf-8" />
+        <title>车主急卖</title>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+        name="viewport" />
+        <meta content="yes" name="apple-mobile-web-app-capable" />
+        <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+        <meta content="telephone=no" name="format-detection" />
+        <link href="http://localhost/demo/baiyouka/static/touch-icon.png" rel="apple-touch-icon-precomposed"
+        />
+        <link href="static/base.css?t=20130329.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header>
+            <a href='#' class="lg">bucar</a>
+            <span class="slg">让二手车交易更公平</span>
+            <a class="addr" href="选择城市.htm">杭州<s class="arr-down"></s></a>
+        </header>
+        <div id="content">
+            <nav class="">
+                车主急卖，价格更给力！
+            </nav>
+            <div class="region">
+                <ul class="ser">
+                    <li class="ser-rz"><s></s>认证车主</li>
+                    <li class="ser-zj"><s></s>质检合格</li>
+                    <li class="ser-db"><s></s>质量担保</li>
+                    <li class="ser-7"><s></s>7天无理由</li>
+                </ul>
+                <ul class="clist"></ul>
+            </div>
+            <footer>
+                <button class="btnload">加载更多<s></s></button>
+            </footer>
+        </div>
+        <script src="static/lib/sea.js?v=20140329"></script>
+        <script>
+            seajs.use("./static/index.js?v=20140329");
+        </script>
+        <script>
+            seajs.use(['./static/p/chexing'],function (chexing) {
+                chexing.init({
+                    list:[
+                        {
+                            title:"首屏数据",
+                            pic:"200_114.png",
+                            price:"23.9",
+                            info:'2000公里 2009上牌',
+                            link:"###",
+                            sers:['rz','zj','db','7']
+                        }
+                    ]
+                });
+            });
+        </script>
+    </body>
+</html>
